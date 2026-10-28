@@ -1,0 +1,40 @@
+# ==============================================================================
+# RAG Chatbot Dependencies
+# Python >= 3.11
+# ==============================================================================
+
+# Web User Interface
+streamlit>=1.38.0,<2.0.0
+
+# LangChain Orchestration (0.3+ Modular Architecture)
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.2.0
+langchain-openai>=0.2.0
+langchain-huggingface>=0.1.0
+
+# Vector Database
+chromadb>=0.5.5
+
+# Embeddings & NLP
+sentence-transformers>=3.0.0
+rank-bm25>=0.2.2
+tiktoken>=0.7.0
+
+# Document Parsers
+pypdf>=4.3.0
+python-docx>=1.1.2
+
+# Configuration & Data Validation
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+python-dotenv>=1.0.1
+
+# HTTP & Network Utilities
+httpx>=0.27.0
+requests>=2.31.0
+
+# Automated Testing
+pytest>=8.3.0
+pytest-mock>=3.14.0

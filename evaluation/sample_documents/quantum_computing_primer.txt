@@ -1,0 +1,16 @@
+# Fundamentals of Quantum Information and Computing Systems
+Document ID: QC-INTRO-2026
+Research Group: Advanced Quantum Computing Laboratory
+
+1. Core Principles: Qubits, Superposition, and Entanglement
+1.1 While classical bits exist deterministically as either 0 or 1, quantum bits (qubits) exist as linear combinations of orthogonal states |0> and |1>, mathematically formulated as |psi> = alpha|0> + beta|1>, where |alpha|^2 + |beta|^2 = 1.
+1.2 Superposition permits an n-qubit register to simultaneously evaluate 2^n states until measurement collapses the wavefunction.
+1.3 Quantum Entanglement creates non-local correlations between distinct qubits such that the quantum state of one cannot be described independently of the state of the other, even when separated by arbitrary spatial distances.
+
+2. Milestone Quantum Algorithms
+2.1 Shor's Algorithm: A polynomial-time quantum algorithm for integer factorization and discrete logarithms. It factorizes an N-bit integer in O((log N)^2 (log log N) (log log log N)) time, demonstrating exponential speedup over classical algorithms and posing a theoretical threat to RSA-2048 encryption.
+2.2 Grover's Algorithm: Provides a quadratic speedup for unstructured database searching and black-box function inversion, reducing search complexity from O(N) to O(sqrt(N)).
+
+3. Quantum Error Correction & Fault Tolerance
+3.1 Physical qubits suffer from decoherence and environmental noise caused by thermal fluctuations and electromagnetic interference.
+3.2 Fault-tolerant quantum computing utilizes topological Surface Codes, where approximately 1,000 physical superconducting qubits are combined to synthesize a single fault-tolerant logical qubit with an error threshold below 10^-3 per gate operation.

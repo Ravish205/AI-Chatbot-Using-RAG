@@ -1,0 +1,18 @@
+# Enterprise Cloud Infrastructure Architecture & Resilience Specification
+Specification Code: ARCH-SPEC-882
+Revision: 4.2
+Author: Cloud Reliability Engineering Group
+
+1. Multi-Region High Availability Architecture
+1.1 Production workloads are deployed in an active-active configuration across two primary geographic regions: us-east-1 (N. Virginia) and us-west-2 (Oregon).
+1.2 Global traffic routing is governed by latency-based DNS routing with automatic health-check failover mediated by Anycast edge proxies.
+
+2. Service Level Agreements (SLA) & Disaster Recovery Metrics
+2.1 System Availability SLA: 99.99% uptime per calendar quarter (equivalent to no more than 13 minutes of unplanned downtime per quarter).
+2.2 Recovery Point Objective (RPO): Strictly defined at 5 minutes for transaction ledgers and relational database clusters. Continuous write-ahead logging (WAL) streams to cross-region S3 buckets.
+2.3 Recovery Time Objective (RTO): 15 minutes for full automated regional failover and stateless application service restoration.
+
+3. Cryptographic Security & Secrets Management
+3.1 Encryption at Rest: All persistent volumes, object storage buckets, and relational database snapshots are encrypted using AES-256 with customer-managed keys (CMK) rotated every 90 days.
+3.2 Encryption in Transit: Strict requirement of TLS 1.3 for all internal microservice-to-microservice gRPC communications and external HTTPS client endpoints. Weak ciphers below 128-bit are dropped at the API gateway layer.
+3.3 Secret Rotation: Database credentials and service API tokens are stored in Vault and automatically rotated every 30 days. Hardcoding credentials in container images or configuration files is blocked by CI/CD pre-commit hooks.
