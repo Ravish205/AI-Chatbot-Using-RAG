@@ -301,3 +301,4 @@ class DocumentLoader:
             "character_count": len(cleaned),
         }
         return [LoadedDocument(page_content=cleaned, metadata=metadata)]
+

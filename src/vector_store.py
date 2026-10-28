@@ -352,3 +352,4 @@ class VectorStoreManager:
             except Exception:
                 return 0
         return 0
+

@@ -210,3 +210,4 @@ class EmbeddingFactory:
                 chosen_provider,
             )
             return HuggingFaceLocalEmbeddings(model_name=model_name)
+

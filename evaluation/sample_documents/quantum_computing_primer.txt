@@ -14,3 +14,4 @@ Research Group: Advanced Quantum Computing Laboratory
 3. Quantum Error Correction & Fault Tolerance
 3.1 Physical qubits suffer from decoherence and environmental noise caused by thermal fluctuations and electromagnetic interference.
 3.2 Fault-tolerant quantum computing utilizes topological Surface Codes, where approximately 1,000 physical superconducting qubits are combined to synthesize a single fault-tolerant logical qubit with an error threshold below 10^-3 per gate operation.
+

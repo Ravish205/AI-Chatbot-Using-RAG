@@ -104,3 +104,4 @@ def format_chat_history(messages: List[dict], max_turns: int = 5) -> str:
             history_lines.append(f"{role}: {short_content}")
 
     return "\n".join(history_lines) + "\n"
+

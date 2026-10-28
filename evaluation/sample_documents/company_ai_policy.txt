@@ -27,3 +27,4 @@ This policy outlines the authorized and prohibited usage of Artificial Intellige
 5. Incident Reporting and Penalties
 5.1 Any accidental data exfiltration or unauthorized injection of sensitive customer data into third-party AI systems must be reported to security-ops@enterprise.internal within 24 hours of discovery.
 5.2 Failure to report an AI safety violation within the 24-hour window constitutes gross negligence and may lead to termination of employment and legal action.
+
